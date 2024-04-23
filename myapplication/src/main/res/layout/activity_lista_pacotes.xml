@@ -8,7 +8,7 @@
     tools:context=".ListaPacotesActivity">
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/textEspeciais"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
@@ -20,4 +20,14 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         tools:text="Especiais" />
+
+    <TextView
+        android:id="@+id/textBrasil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Brasil"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="@+id/textEspeciais"
+        app:layout_constraintTop_toBottomOf="@+id/textEspeciais" />
 </androidx.constraintlayout.widget.ConstraintLayout>
