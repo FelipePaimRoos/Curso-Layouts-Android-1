@@ -1,0 +1,35 @@
+{
+  "pacotes" : [
+    {
+    "imagem" : "@drawable/ic_launcher_background",
+    "nome" : "São Paulo",
+    "dias" : "2 dias",
+    "preco" : "R$ 243,99"
+    },
+    {
+      "imagem" : "@drawable/ic_launcher_background",
+      "nome" : "Belo Horizonte",
+      "dias" : "3 dias",
+      "preco" : "R$ 421,50"
+    },
+    {
+      "imagem" : "@drawable/ic_launcher_background",
+      "nome" : "Recife",
+      "dias" : "4 dias",
+      "preco" : "R$ 754,20"
+    },
+    {
+      "imagem" : "@drawable/ic_launcher_background",
+      "nome" : "Rio de Janeiro",
+      "dias" : "5 dias",
+      "preco" : "R$ 500,99"
+    },
+    {
+      "imagem" : "@drawable/ic_launcher_background",
+      "nome" : "Fortaleza",
+      "dias" : "6 dias",
+      "preco" : "R$ 852,19"
+    }
+    ]
+
+}
