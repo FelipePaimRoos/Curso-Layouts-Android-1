@@ -9,7 +9,7 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CursoLayoutAndroid1">
         <activity
-            android:name=".ListaPacotesActivity"
+            android:name=".activity.ListaPacotesActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
