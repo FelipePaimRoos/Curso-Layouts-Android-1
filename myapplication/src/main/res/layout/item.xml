@@ -5,6 +5,7 @@
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
     <ImageView
+        android:id="@+id/imagemCidade"
         android:layout_width="0dp"
         android:layout_height="100dp"
         android:scaleType="centerCrop"
@@ -15,5 +16,60 @@
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.0"
         />
+
+    <TextView
+        android:id="@+id/TextNomeCidade"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="São Paulo"
+        app:layout_constraintStart_toStartOf="@+id/imagemCidade"
+        app:layout_constraintEnd_toEndOf="@+id/imagemCidade"
+        app:layout_constraintTop_toTopOf="@+id/imagemCidade"
+        app:layout_constraintBottom_toBottomOf="@+id/imagemCidade"
+        app:layout_constraintVertical_bias="1.0"
+        app:layout_constraintHorizontal_bias="0.0"
+        android:textSize="14sp"
+        android:layout_margin="8dp"
+        android:padding="8dp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        android:background="@android:drawable/screen_background_dark_transparent" />
+
+    <View
+        android:id="@+id/divisor"
+        android:layout_width="wrap_content"
+        android:layout_height="3dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/imagemCidade"
+        android:background="@android:color/holo_orange_dark"
+        />
+
+    <TextView
+        android:id="@+id/dias"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="2 dias"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/divisor"
+        android:layout_margin="8dp"
+        android:textStyle="bold"
+        android:textSize="16sp"
+        app:layout_constraintHorizontal_bias="0.0"
+        />
+
+    <TextView
+        android:id="@+id/preco"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="R$ 243,99"
+        app:layout_constraintStart_toStartOf="@id/dias"
+        app:layout_constraintTop_toBottomOf="@id/dias"
+        android:textSize="20dp"
+        android:textColor="@android:color/holo_green_dark"
+
+        />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>
