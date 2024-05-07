@@ -16,7 +16,11 @@ import com.example.myapplication.model.Pacote;
 
 import org.w3c.dom.Text;
 
+import java.math.BigDecimal;
+import java.text.DecimalFormat;
+import java.text.NumberFormat;
 import java.util.List;
+import java.util.Locale;
 
 public class ListaPacotesAdapter extends BaseAdapter {
 
@@ -57,10 +61,21 @@ public class ListaPacotesAdapter extends BaseAdapter {
         imagem.setImageDrawable(drawableImagemPacote);
 
         TextView dias = viewCriada.findViewById(R.id.dias);
-        dias.setText(pacote.getDias() + " dias");
+        String diasEmTexto = "";
+        int quantidadeDeDias = pacote.getDias();
+        if(quantidadeDeDias > 1) {
+            diasEmTexto = quantidadeDeDias + " dias";
+        } else {
+            diasEmTexto = quantidadeDeDias + " dia";
+        }
+        dias.setText(diasEmTexto);
 
         TextView preco = viewCriada.findViewById(R.id.preco);
-        preco.setText(pacote.getPreco().toString());
+        NumberFormat formatoBrasileiro = DecimalFormat.getCurrencyInstance(new Locale("pt", "br"));
+        BigDecimal precoDoPacote = pacote.getPreco();
+        String moedaBrasileira = formatoBrasileiro.format(precoDoPacote).replace("R$", "R$ ");
+
+        preco.setText(moedaBrasileira);
 
         return viewCriada;
     }
