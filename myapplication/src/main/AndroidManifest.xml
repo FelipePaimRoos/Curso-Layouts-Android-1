@@ -9,6 +9,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CursoLayoutAndroid1">
         <activity
+            android:name=".activity.PagamentoActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.ResumoPacoteActivity"
             android:exported="false" />
         <activity
