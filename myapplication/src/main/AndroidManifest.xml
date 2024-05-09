@@ -9,6 +9,14 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CursoLayoutAndroid1">
         <activity
+            android:name=".activity.ResumoPacoteActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ResumoPacoteActivity"
+            android:exported="false"
+            android:label="@string/title_activity_resumo_pacote"
+            android:theme="@style/Theme.CursoLayoutAndroid1" />
+        <activity
             android:name=".activity.ListaPacotesActivity"
             android:exported="true">
             <intent-filter>
