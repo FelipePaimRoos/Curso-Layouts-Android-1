@@ -12,4 +12,7 @@
     <string name="finalizar_compra">Finalizar Compra</string>
     <string name="nome_do_cartao">Nome do cartão</string>
     <string name="mascara_nome_no_cartao">abcdefghijklmnopqrstuvwxyzçABCDEFGHIJKLMNOPQRSTUVWXYZÇ</string>
+    <string name="confira_o_resultado_da_compra">Confira o resultado da compra:</string>
+    <string name="compra_realizada_com_sucesso">Compra realizada com sucesso :)</string>
+    <string name="parab_ns">Parabéns!</string>
 </resources>

@@ -1,5 +1,6 @@
 package com.example.myapplication.activity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.widget.TextView;
 
@@ -29,6 +30,9 @@ public class PagamentoActivity extends AppCompatActivity {
         Pacote pacoteSaoPaulo = new Pacote("São Paulo", "@android:drawable/screen_background_dark", 2, new BigDecimal("243.99"));
 
         mostraPreco(pacoteSaoPaulo);
+
+        Intent intent = new Intent(this, ResumoCompraActivity.class);
+        startActivity(intent);
 
     }
 
