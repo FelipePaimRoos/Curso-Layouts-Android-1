@@ -9,4 +9,6 @@
     <string name="valor_da_compra">Valor da Compra:</string>
     <string name="informa_cartao">Digite as informações do cartão de crédito que você deseja usar para o pagamento</string>
     <string name="cvc">CVC</string>
+    <string name="finalizar_compra">Finalizar Compra</string>
+    <string name="nome_do_cartao">Nome do cartão</string>
 </resources>
