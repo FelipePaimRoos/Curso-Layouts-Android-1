@@ -8,7 +8,7 @@
     tools:context=".activity.ResumoPacoteActivity">
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/imagemCidadeResumo"
         android:layout_width="0dp"
         android:layout_height="140dp"
         android:scaleType="centerCrop"
@@ -21,7 +21,7 @@
         app:srcCompat="@drawable/ic_launcher_background" />
 
     <TextView
-        android:id="@+id/textView"
+        android:id="@+id/NomeCidadeResumo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="8dp"
@@ -29,51 +29,51 @@
         android:textSize="24dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCidadeResumo"
         tools:text="São Paulo" />
 
     <TextView
-        android:id="@+id/textView2"
+        android:id="@+id/QuantidadeDiasResumo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:textSize="16sp"
-        app:layout_constraintStart_toStartOf="@+id/textView"
-        app:layout_constraintTop_toBottomOf="@+id/textView"
+        app:layout_constraintStart_toStartOf="@+id/NomeCidadeResumo"
+        app:layout_constraintTop_toBottomOf="@+id/NomeCidadeResumo"
         tools:text="2 dias" />
 
     <TextView
-        android:id="@+id/textView3"
+        android:id="@+id/Data"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginTop="8dp"
         android:textSize="14sp"
         tools:text="09/05 - 11/05 de 2024"
-        app:layout_constraintStart_toStartOf="@+id/textView2"
-        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+        app:layout_constraintStart_toStartOf="@+id/QuantidadeDiasResumo"
+        app:layout_constraintTop_toBottomOf="@+id/QuantidadeDiasResumo" />
 
     <TextView
-        android:id="@+id/textView4"
+        android:id="@+id/precoResumo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         tools:text="R$ 243,99"
         android:layout_marginRight="8dp"
         android:textSize="20sp"
         android:textColor="@android:color/holo_green_dark"
-        app:layout_constraintBottom_toBottomOf="@+id/textView3"
+        app:layout_constraintBottom_toBottomOf="@+id/Data"
         app:layout_constraintEnd_toEndOf="parent" />
 
     <TextView
-        android:id="@+id/textView5"
+        android:id="@+id/precoFinalResumo"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Preço Final"
         android:textSize="14sp"
-        app:layout_constraintBottom_toTopOf="@+id/textView4"
-        app:layout_constraintEnd_toEndOf="@+id/textView4" />
+        app:layout_constraintBottom_toTopOf="@+id/precoResumo"
+        app:layout_constraintEnd_toEndOf="@+id/precoResumo" />
 
     <Button
-        android:id="@+id/button"
+        android:id="@+id/botaoRealizaPagamentoResumo"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginLeft="8dp"
@@ -85,7 +85,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/imageView"
+        app:layout_constraintTop_toBottomOf="@+id/imagemCidadeResumo"
         app:layout_constraintVertical_bias="1.0" />
 
 
